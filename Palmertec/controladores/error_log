@@ -1,0 +1,40 @@
+[11-Mar-2021 01:08:04 America/Mexico_City] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'palmerte_pal'@'localhost' to database 'palmertec_palm' in /home/palmerte/si.palmertec.mx/controladores/conexion.php on line 9
+[11-Mar-2021 01:09:05 America/Mexico_City] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'palmerte_pal'@'localhost' to database 'palmertec_palm' in /home/palmerte/si.palmertec.mx/controladores/conexion.php on line 9
+[18-Apr-2021 23:07:13 America/Mexico_City] PHP Notice:  Undefined index: Correo in /home/palmerte/si.palmertec.mx/controladores/validaciones.php on line 5
+[18-Apr-2021 23:07:13 America/Mexico_City] PHP Notice:  Undefined index: Contraseña in /home/palmerte/si.palmertec.mx/controladores/validaciones.php on line 6
+[02-Aug-2021 20:36:32 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 13
+[02-Aug-2021 20:36:32 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 14
+[02-Aug-2021 20:36:32 America/Mexico_City] PHP Notice:  Undefined index: acreditacionEMA in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 32
+[03-Aug-2021 12:16:52 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registrarpromocionesAdm.php on line 14
+[03-Aug-2021 12:16:52 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registrarpromocionesAdm.php on line 15
+[03-Aug-2021 12:16:52 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registrarpromocionesAdm.php on line 22
+[03-Aug-2021 12:16:52 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registrarpromocionesAdm.php on line 23
+[03-Aug-2021 12:16:52 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registrarpromocionesAdm.php on line 30
+[03-Aug-2021 12:16:52 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registrarpromocionesAdm.php on line 31
+[03-Aug-2021 12:16:52 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registrarpromocionesAdm.php on line 38
+[03-Aug-2021 12:16:52 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registrarpromocionesAdm.php on line 39
+[09-Aug-2021 16:53:35 America/Mexico_City] PHP Notice:  Undefined index: acreditacionILAC in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 33
+[17-Aug-2021 15:40:46 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 13
+[17-Aug-2021 15:40:46 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 14
+[18-Aug-2021 11:12:45 America/Mexico_City] PHP Notice:  Undefined index: acreditacionEMA in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 32
+[18-Aug-2021 18:06:09 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 13
+[18-Aug-2021 18:06:10 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 14
+[18-Aug-2021 18:06:10 America/Mexico_City] PHP Notice:  Undefined index: acreditacionEMA in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 32
+[18-Aug-2021 18:06:10 America/Mexico_City] PHP Notice:  Undefined index: acreditacionILAC in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 33
+[18-Aug-2021 18:09:18 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 13
+[18-Aug-2021 18:09:18 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 14
+[18-Aug-2021 18:12:27 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 13
+[18-Aug-2021 18:12:27 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 14
+[18-Aug-2021 18:12:27 America/Mexico_City] PHP Notice:  Undefined index: acreditacionILAC in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 33
+[18-Aug-2021 18:12:27 America/Mexico_City] PHP Notice:  Undefined index: mantenimiento in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 34
+[18-Aug-2021 18:13:18 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 13
+[18-Aug-2021 18:13:18 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 14
+[18-Aug-2021 18:20:34 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 13
+[18-Aug-2021 18:20:34 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 14
+[18-Aug-2021 18:20:34 America/Mexico_City] PHP Notice:  Undefined index: acreditacionILAC in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 33
+[19-Aug-2021 18:24:02 America/Mexico_City] PHP Notice:  Undefined index: acreditacionEMA in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 32
+[19-Aug-2021 18:24:02 America/Mexico_City] PHP Notice:  Undefined index: mantenimiento in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 34
+[19-Aug-2021 18:43:21 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 13
+[19-Aug-2021 18:43:21 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, bool given in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 14
+[19-Aug-2021 18:43:21 America/Mexico_City] PHP Notice:  Undefined index: acreditacionEMA in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 32
+[19-Aug-2021 18:43:21 America/Mexico_City] PHP Notice:  Undefined index: mantenimiento in /home/palmerte/public_html/PuntoDeVenta/controladores/registro_laboratoriosN.php on line 34

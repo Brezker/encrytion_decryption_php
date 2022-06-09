@@ -1,0 +1,132 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+
+a {
+  color: #3c93b0;
+}
+
+
+#container {
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+}
+
+
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+  
+nav ul li {
+  display:inline-block;
+  background-color: #0bace2;/*no se mueve*/
+  }
+
+nav a {
+  display:block;
+  padding:0 30px; 
+  color:rgb(238, 232, 236);
+  font-size:16px;
+  line-height: 60px;
+  text-decoration:none;
+}
+
+nav a:hover { 
+  background-color:#0a4180;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 60px; /* the height of the main nav */
+}
+  
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display:inherit;
+}
+  
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+  position: relative;
+  top:-60px; 
+  left:170px;
+}
+
+  
+i {
+   
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: -7px 0 0px 7px;
+    vertical-align: middle;
+}
+
+header{
+    display: block;
+    background-color: #E7EBDA;
+    width:100%;
+}
+
+header h1{
+    text-transform: uppercase;
+    text-align: left;
+    width:30%;
+    display:inline-block;
+}
+header nav{
+    text-align: right;
+    display:inline-block;
+    width:60%;
+}
+
+header ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    text-decoration: none;
+    border: solid;
+    border-color: #7D8471;
+    border-radius: 50px;
+    background-color: #7D8471;
+    color: white;
+    padding: 0.3em;
+}
+
+header ul li a:hover{
+    background-color: #B8B799;
+    border-color: #B8B799;
+}
+
+header ul li a:active{
+    padding: 0.2em;
+}
