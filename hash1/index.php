@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +11,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <title>Landing Page</title>
 </head>
+
 <body>
-<div class="container" style="padding-top: 20%;">
-<div class="row">
-    <div class="col-auto me-auto">
-    <a href="encript.php">
-        <button>Alumno</button>
-    </a>
+    <div class="container" style="padding-top: 20%;">
+        <div class="row">
+            <div class="col-auto me-auto">
+                <a href="encript.php">
+                    <button>Alumno</button>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="decript.php">
+                    <button>Profesor</button>
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="col-auto">
-    <a href="decript.php">
-        <button>Profesor</button>
-    </a>
-    </div>
-  </div>
-</div>
-     
-     
+
+
 </body>
+
 </html>

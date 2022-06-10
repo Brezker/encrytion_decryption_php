@@ -1,5 +1,30 @@
+<?php
+
+if (isset($_POST["submit"])) {
+
+    $filename = $_POST['csv_file'];
+    $filext = pathinfo($filename, PATHINFO_EXTENSION);
+
+    $decrypted = decrypt_file('encrypted/' . $filename, 'secret-password');
+    header('Content-type:application/' . $filext);
+    fpassthru($decrypted);
+}
+
+function decrypt_file($file, $passphrase)
+{
+    $iv = substr(md5("\x18\x3C\x58" . $passphrase, true), 0, 8);
+    $key = substr(md5("\x2D\xFC\xD8" . $passphrase, true) . md5("\x2D\xFC\xD8" . $passphrase, true), 0, 24);
+    $opts = array('iv' => $iv, 'key' => $key);
+    $fp = fopen($file, 'rb');
+    stream_filter_append($fp, 'mdecrypt.tripledes', STREAM_FILTER_READ, $opts);
+    return $fp;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,39 +35,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <title>Decript</title>
 </head>
+
 <body>
-<div class="container" style="padding-top: 5%;">
-    <label for="fname">Encripted code:</label>
-    <textarea rows="5" cols="60" name="text" placeholder="Encripted"></textarea><br><br>
-    <label for="fname">Decripted text:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Decripted file:</label>
-    <input type="file" id="lname" name="lname"><br><br>
-    <input type="submit" value="Decript">
-</div>
+    <div class="container" style="padding-top: 5%;">
+        <form method="POST">
+            <label for="lname">File to decrypt:</label>
+            <input type="file" id="lname" name="csv_file"><br><br>
+            <input type="submit" name="submit" value="Decript">
+        </form>
+    </div>
 </body>
+
 </html>
-
-<?php
-
-if(isset($_POST["submit"])){
-
-    $filename = $_POST['csv_file'];
-            $filext = pathinfo($filename, PATHINFO_EXTENSION);
-
-    $decrypted = decrypt_file('encrypted/'.$filename, 'secret-password');
-            header('Content-type:application/png');
-            fpassthru($decrypted);
-
-}
-
-function decrypt_file($file,$passphrase){
-    $iv = substr(md5("\x18\x3C\x58".$passphrase, true),0,8);
-    $key = substr(md5("\x2D\xFC\xD8".$passphrase, true).md5("\x2D\xFC\xD8".$passphrase, true),0,24);
-    $opts = array('iv'=>$iv, 'key'=>$key);
-    $fp = fopen($file,'rb');
-    stream_filter_append($fp, 'mdecrypt.tripledes',STREAM_FILTER_READ, $opts);
-    return $fp;
-}
-
-?>
