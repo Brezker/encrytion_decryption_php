@@ -3,9 +3,12 @@
 if (isset($_POST["submit"])) {
 
     $filename = $_POST['csv_file'];
+    $filesalt = $_POST['tcontra'];
     $filext = pathinfo($filename, PATHINFO_EXTENSION);
 
-    $decrypted = decrypt_file('encrypted/' . $filename, 'secret-password');
+    //hacer el secret pass no estatico
+
+    $decrypted = decrypt_file('encrypted/' . $filename, $filesalt);
     header('Content-type:application/' . $filext);
     fpassthru($decrypted);
 }
@@ -41,6 +44,8 @@ function decrypt_file($file, $passphrase)
         <form method="POST">
             <label for="lname">File to decrypt:</label>
             <input type="file" id="lname" name="csv_file"><br><br>
+            <label for="lname">Salt:</label>
+            <input type="text" id="txtcontra" name="tcontra"><br><br>
             <input type="submit" name="submit" value="Decript">
         </form>
     </div>

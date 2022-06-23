@@ -17,6 +17,8 @@
         <form method="POST">
             <label for="lname">File:</label>
             <input type="file" id="lname" name="csv_file"><br><br>
+            <label for="lname">Salt:</label>
+            <input type="text" id="txtcontra" name="tcontra"><br><br>
             <input type="submit" name="submit" value="Encript">
         </form>
     </div>
@@ -37,9 +39,10 @@ if (isset($_POST["submit"])) {
         echo '<script type="text/javascript">alert("'.$filedir.'");</script>';
         */
     $filename = $_POST['csv_file'];
+    $filesalt = $_POST['tcontra'];
     $filext = pathinfo($filename, PATHINFO_EXTENSION);
 
-    encrypt_file($filename, 'encrypted/' . $filename, 'secret-password');
+    encrypt_file($filename, 'encrypted/' . $filename, $filesalt);
 }
 
 function encrypt_file($file, $destination, $passphrase)
